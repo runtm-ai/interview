@@ -1,0 +1,120 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1b2538;
+  background: #f3f5fa;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: clamp(1rem, 7vw, 4rem) 1rem;
+}
+
+.workspace {
+  max-width: 38rem;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  background: white;
+  border: 1px solid #dbe1eb;
+  border-radius: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 7vw, 3rem);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+a {
+  color: #294c9c;
+}
+
+a:focus-visible {
+  outline: 2px solid #294c9c;
+  outline-offset: 4px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.viewer {
+  margin: 0.75rem 0 0;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.choices a {
+  padding: 0.6rem 1rem;
+  background: #eaf0ff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.choices a:hover {
+  background: #dce6ff;
+}
+
+.members {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.members li + li {
+  margin-top: 0.25rem;
+}
+
+.upload-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.upload-controls input {
+  max-width: 100%;
+}
+
+.upload-controls button {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #294c9c;
+  border-radius: 0.5rem;
+  background: #294c9c;
+  color: white;
+  font: inherit;
+  font-weight: 600;
+}
+
+.upload-controls button:disabled {
+  border-color: #dbe1eb;
+  background: #f3f5fa;
+  color: #454e60;
+}
+
+.documents {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.documents li + li {
+  margin-top: 0.5rem;
+}
+
+.documents p {
+  margin: 0.15rem 0 0;
+}
